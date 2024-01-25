@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fortnite Priority Queue</title>
+  <link rel="icon" type="image/x-icon" href="Imagenes/Peely.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <center>Cola de Jugadores Fortnite</center>
+    </h1>
+    <div class="mb-3">
+      <label for="player-name" class="form-label">Gamertag:</label>
+      <input type="text" class="form-control" id="player-name">
+      <ul id="sugerencias-jugadores"></ul>
+    </div>
+    
+    <div class="mb-3-form-check">
+      <input type="checkbox" class="form-check-input vip-checkbox" id="vip">
+      <img class="icono" src="Imagenes/VIP.png"> 
+      <label class="form-check-label" for="vip" onclick="animateCheckbox('vip')">VIP</label>
+  </div>
+  
+    
+    <div class="mb-3-form-check">
+      <input type="checkbox" class="form-check-input mod-checkbox" id="mod">
+      <img class="icono" src="Imagenes/MOD.jpg">
+      <label class="form-check-label" for="mod" onclick="animateCheckbox('mod')">Moderador</label>
+    </div>
+    
+    <div class="mb-3-form-check">
+      <input type="checkbox" class="form-check-input sub-checkbox" id="sub">
+      <img class="icono" src="Imagenes/SUB.png">
+      <label class="form-check-label" for="sub" onclick="animateCheckbox('sub')">Suscriptor</label>
+    </div>
+    
+    <button class="btn btn-primary" onclick="enqueuePlayer()">Agregar Jugador</button>
+
+    <h2>Lista de Espera</h2>
+    <ul id="queue-list"></ul>
+
+    <h2>Escuadrón Actual</h2>
+    <ul id="current-squad-list"></ul>
+
+    <h2>Segunda Vuelta</h2>
+    <ul id="second-round-list"></ul>
+
+    <h2>Jugadores Sentados</h2>
+    <ul id="sentados-list"></ul>
+
+    <button class="btn btn-primary" onclick="updateRemainingMatches()">Actualizar Partidas</button>
+
+    <div class="mb-3">
+      <label for="select-player">Seleccionar jugador:</label>
+      <select class="form-select" id="select-player"></select>
+    </div>
+
+    <button class="btn btn-primary" onclick="movePlayer()">Sentar Jugador</button>
+
+    <div class="mb-3">
+      <label for="select-player-mandar">Mandar jugador:</label>
+      <select class="form-select" id="select-player-mandar"></select>
+    </div>
+
+    <button class="btn btn-primary" onclick="movePlayerSquad()">Mandar Jugador</button>
+
+    <div class="mb-3">
+      <label for="return-player-select">Regresar Jugador:</label>
+      <select class="form-select" id="return-player-select"></select>
+    </div>
+
+    <button class="btn btn-primary" onclick="returnPlayerToQueue()">Regresar Jugador al Escuadrón</button>
+  </div>
+
+  <h3>
+    <center>Page by @TheKingCerberu</center>
+  </h3>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

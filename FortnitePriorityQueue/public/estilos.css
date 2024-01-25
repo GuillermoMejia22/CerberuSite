@@ -1,0 +1,203 @@
+#sugerencias-jugadores {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #9a8c98;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-control {
+  color: purple;
+  font-size: 20px;
+}
+
+.form-label {
+  font-style: italic;
+}
+
+.icono {
+  width: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.mb-3-form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-control:focus {
+  color: purple;
+  font-size: 20px;
+}
+
+#sugerencias-jugadores li {
+  padding: 8px;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 5px 5px 5px #22223b;
+  font-size: 20px;
+}
+
+#sugerencias-jugadores li:hover {
+  background-color: #f1f1f1;
+}
+
+@font-face {
+  font-family: 'BurbankBigCondensed-Black';
+  src: url('Fuentes/BurbankBigCondensed-Black.otf') format('truetype');
+}
+
+body {
+  font-family: 'BurbankBigCondensed-Black', sans-serif;
+  /* Utiliza el nombre de la fuente definido en font-family */
+  /*background-color: #0198F1;*/
+  background-image: url("Imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  color: #fff;
+  font-size: 30px;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los jugadores VIP y Suscriptores */
+.player-vip {
+  color: #FFD700;
+}
+
+.player-sub {
+  color: #FF69B4;
+}
+
+/* Animación para resaltar el jugador seleccionado */
+@keyframes highlight {
+  0% {
+    background-color: #7289da;
+  }
+
+  50% {
+    background-color: #5f73bc;
+  }
+
+  100% {
+    background-color: #7289da;
+  }
+}
+
+h3 {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.btn-primary {
+  background-color: #0198f1;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Otros estilos personalizados que desees aplicar al botón */
+}
+
+.vip-checkbox:checked {
+  background-color: #ff0090; /* Cambia esto al color que desees */
+}
+
+/* Estilo para el checkbox Moderador */
+.mod-checkbox:checked {
+  background-color: #14CB01; /* Cambia esto al color que desees */
+}
+
+/* Estilo para el checkbox Suscriptor */
+.sub-checkbox:checked {
+  background-color: #4B347C; /* Cambia esto al color que desees */
+}
+
+/* Estilos adicionales para temática gamer */
+/* Estilos para el recuadro del jugador */
+.player-info {
+  background-color: #0198f1;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la imagen de perfil del jugador */
+.player-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Estilos para los íconos VIP y Sub */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.vip-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.sub-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.player-s {
+  border-radius: 100%;
+}

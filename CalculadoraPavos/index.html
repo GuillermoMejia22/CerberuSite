@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Pavos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Estilos/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Pavos</h1>
+        <div class="form-group">
+            <label for="pavos">Pavos:</label>
+            <input type="text" class="form-control" id="pavos">
+        </div>
+        <div class="form-group">
+            <label for="monedas">Moneda:</label>
+            <select class="form-control" id="monedas">
+                <option value="">Selecciona Moneda</option>
+                <option value="MXN">MXN</option>
+                <option value="USD">USD</option>
+                <option value="ARS">ARS</option>
+                <option value="EUR">EUR</option>
+                <option value="S/">S/</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" onclick="calculaPavos()">Calcula</button>
+        <div class="form-group">
+            <label id="resultado">Precio:</label>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

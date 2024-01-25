@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'BurbankBigCondensed-Black';
+    /*src: url('/Fuentes/BurbankBigCondensed-Black.otf') format('opentype');*/
+    src:url(/Fuentes/BurbankBigCondensed-Black.otf);
+}
+
+body {
+    font-family: 'BurbankBigCondensed-Black', sans-serif;
+    color: #fff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    font-size: 30px;
+    text-align: center;
+    background-image: url('/Imagenes/fortnite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+label,
+select,
+button {
+    margin: 10px;
+}
+
+.btn.btn-primary {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    width: 25%;
+    font-size: 25px;
+}
+
+select {
+    width: 20px;
+}
+
+input#pavos {
+    width: 100px;
+    font-size: 18px;
+}
+
+select#monedas {
+    width: 180px;
+    font-size: 18px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-group input {
+    display: inline-block;
+    width: auto;
+}
+
+.form-group select {
+    display: inline-block;
+    width: auto;
+}
